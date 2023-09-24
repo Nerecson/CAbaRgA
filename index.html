@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сайт про кабаргу</title>
+  <style>
+    body {
+      background-image: url("https://catherineasquithgallery.com/uploads/posts/2021-03/1614724659_55-p-foni-dlya-lendinga-62.jpg");
+      background-size: cover;
+      background-position: center;
+      font-family: sans-serif;
+      margin: 0;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      display: none;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .header h2 {
+      text-align: center;
+      color: white;
+      margin: 0;
+      padding: 10px;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-around;
+      position: sticky;
+      top: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 2;
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom-color 0.3s ease;
+    }
+
+    .nav a:hover {
+      border-bottom-color: white;
+    }
+
+    .nav a.active {
+      border-bottom-color: white;
+    }
+
+    .content {
+      margin-top: 60px;
+      padding: 20px;
+    }
+
+    h1, h3 {
+      font-size: 40px;
+      color: white;
+      text-shadow: 2px 2px 5px black;
+      text-align: center;
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-size: 20px;
+      line-height: 1.5;
+      color: white;
+      text-shadow: 2px 2px 5px black;
+      text-align: justify;
+    }
+
+    img {
+      display: block;
+      margin: auto;
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .footnote {
+      margin-top: 20px;
+      font-size: 14px;
+      color: white;
+    }
+
+    .footnote ol {
+      list-style: none;
+      counter-reset: footnotes;
+    }
+
+    .footnote ol li {
+      counter-increment: footnotes;
+      margin-bottom: 5px;
+    }
+
+    .footnote ol li a::before {
+      content: "[" counter(footnotes) "]";
+      color: rgba(255, 255, 255, 0.7);
+      margin-right: 5px;
+      text-decoration: none;
+    }
+
+    .footnote ol li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footnote ol li a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      background-color: rgba(0, 0, 0, 0.7);
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 20px;
+    }
+
+    .footer p {
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .footer .links {
+      color: white;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+
+    .footer .links:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Сайт про кабаргу</h2>
+</div>
+
+<nav class="nav">
+  <a href="#description" class="nav-link">Описание</a>
+  <a href="#habitat" class="nav-link">Местообитание</a>
+  <a href="#diet" class="nav-link">Питание</a>
+  <a href="#behavior" class="nav-link">Поведение</a>
+</nav>
+
+<div class="content">
+  <h1>Кабарга</h1>
+
+  <p id="description">
+    Кабарга́, или сиби́рская кабарга́ (
+    лат. Moschus moschiferus) — небольшое парнокопытное оленевидное животное, представитель семейства
+    кабарговых (Moschidae). Латинское название вида происходит от др.-греч. μόσχος — мускус. Moschiferus
+    переводится как «несущий мускус».
+  </p>
+
+  <img src="http://faunazoo.ru/wp-content/uploads/2017/09/%D0%A1%D0%B8%D0%B1%D0%B8%D1%80%D1%81%D0%BA%D0%B0%D1%8F-%D0%BA%D0%B0%D0%B1%D0%B0%D1%80%D0%B3%D0%B0.jpeg" alt="Изображение кабарги" />
+
+  <p id="habitat">
+    Кабарга распространена в Восточной Сибири, Приморском крае от Восточных Гималаев и Тибета до Кореи
+    и Сахалина, населяя крутые склоны гор, поросшие хвойным лесом. 
+  </p>
+
+  <img src="https://wikids.ru/slides/fjWOXb9HAwNDK5VoSMJPs_rEQ0Yb17gc.pptx/rbABKbquXJsU7DBhSuz6OrVRjYILBPu_.jpg" alt="Изображение местообитания кабарги" />
+
+  <p id="diet">
+    Излюбленные места обитания кабарги — темнохвойные участки тайги с россыпями и выходами скал. В рационе кабарги преобладают эпифитные и наземные лишайники. Зимой их доля в её рационе составляет
+    60-95 %. 
+  </p>
+
+  <img src="https://web-zoopark.ru/wp-content/uploads/2018/09/4-11.jpg" alt="Изображение питания кабарги" />
+
+  <h3 id="behavior">Поведение</h3>
+
+  <p>
+    Кабарги ведут уединенный, скрытный образ жизни. В период брачных игр самец озвучивает своё присутствие
+    в радиусе 500—2200 м, вызывая пользователя разнообразными выкриками на протяжении суток.
+  </p>
+
+  <img src="https://kartinkin.net/uploads/posts/2022-12/1670023946_kartinkin-net-p-flopa-koshka-pinterest-55.jpg" alt="Изображение кабарги в природе" />
+</div>
+
+<div class="footnote">
+  <ol>
+    <li id="fn1">
+      <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%B1%D0%B0%D1%80%D0%B3%D0%B0" target="_blank">Информация про
+        кабаргу.</a>
+    </li>
+    <li id="fn2">
+      <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%B1%D0%B0%D1%80%D0%B3%D0%B0" target="_blank">Ссылка на описание
+        кабарги в википедии.</a>
+    </li>
+    <li id="fn3">
+      <a href="https://irecommend.ru/content/opasnyi-i-zagadochnyi-zver-sibiri-kabarga" target="_blank">Брачные игры кабарги.</a>
+    </li>
+    <li id="fn4">
+      <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%B1%D0%B0%D1%80%D0%B3%D0%B0#%D0%91%D0%B8%D0%BE%D1%8D%D0%BA%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F" target="_blank">Способности кабарги к движению.</a>
+    </li>
+  </ol>
+</div>
+
+<div class="footer">
+  <p>Авторские права &copy; 2023. Все права защищены.</p>
+  <a href="https://kreditkassa.ru/" target="_blank" class="links">Контакты</a>
+  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="links">Политика конфиденциальности</a>
+  <p>Созданием сайта занимались: أندري كراسنوف и кто-то ещё 
+     оддерживаете нас!
+л  </p>
+</div>
+
+<script>
+  function handleAnchorClick(event) {
+    event.preventDefault();
+    const targetId = event.currentTarget.getAttribute("href");
+    document.querySelector(targetId).scrollIntoView({ behavior: "smooth" });
+  }
+
+  const navLinks = document.querySelectorAll(".nav a");
+  navLinks.forEach((link) => {
+    link.addEventListener("click", handleAnchorClick);
+  });
+
+  const navOffset = window.innerHeight / 2;
+  const sections = document.querySelectorAll("p, h3");
+  const navLinksArray = Array.prototype.slice.call(navLinks);
+
+  function markActiveLink() {
+    const currentPosition = window.pageYOffset + navOffset;
+
+    sections.forEach((section, index) => {
+      const sectionTop = section.offsetTop;
+      const sectionBottom = sectionTop + section.offsetHeight;
+
+      if (currentPosition >= sectionTop && currentPosition <= sectionBottom) {
+        const activeLink = navLinksArray[index];
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+        });
+        activeLink && activeLink.classList.add("active")
+      }
+    });
+  };
+
+  window.addEventListener("scroll", markActiveLink);
+
+  const header = document.querySelector(".header");
+  function showFixedHeader() {
+    if (window.pageYOffset > 100) {
+      header.style.display = "block";
+    } else {
+      header.style.display = "none";
+    }
+  };
+  window.addEventListener("scroll", showFixedHeader);
+</script>
+</body>
+</html>
